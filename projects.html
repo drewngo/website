@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Andrew Ngo [drewngo.com]</title>
+    <link rel="icon" type="image/x-icon" href="/images/PEACE.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">drewngo.com</div>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="resume.pdf" target="_blank">Resume</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="projects">
+                <h1>Projects</h1>
+                <p style="color: var(--text-muted);">A collection of my work, side projects, and open source contributions.</p>
+                
+                <div class="project-list" style="margin-top: 2rem;">
+                    
+                    <a href="https://github.com/drewngo" class="project-item">
+                        <div class="project-info">
+                            <span class="project-title">drewngo.com</span>
+                            <div class="project-desc">My Personal Portfolio Website</div>
+                        </div>
+                        <div class="project-meta">
+                            <span><span class="lang-dot" style="background: #e34c26;"></span>HTML</span>
+                            <!-- <span>★ 0</span> -->
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p style="font-size: 0.8rem; opacity: 0.6;">
+                실패는 성공의 어머니
+                <br>
+                failure is the mother of success
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

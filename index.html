@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>andrew ngo</title>
-        <link rel="icon" type="image/x-icon" href="/images/Happy_smiley_face.png">
-    </head>
-    
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-body {width: 92%; height: 95%; position: absolute; display: table;}
-  p {display: table-cell; text-align:center; vertical-align: middle; font-family: Space Mono; line-height: 1.2}
-  p.links {display: table-cell; text-align:left; vertical-align: middle; font-family: Space Mono; line-height: 1.4}
-</style>
-    
-<p>
-<font size="5"><b>drewngo.com</b></font><br>
-<font size="9"><b>andrew ngo</b></font><br>
-</p>
-<p class=links>
-<font size="5"><b><a href="/resume.pdf" target="_blank">> resume</a></b></font><br>
-<font size="5"><b><a href="https://github.com/drewngo" target="_blank">> github</a></b></font>
-</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Ngo [drewngo.com]</title>
+    <link rel="icon" type="image/x-icon" href="/images/PEACE.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">drewngo.com</div>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.pdf" target="_blank">Resume</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="profile-header">
+                    <img src="/images/headshot.jpeg" alt="Profile Avatar" class="avatar">
+                    <div class="intro-text">
+                        <h1>Hello! 🫰</h1>
+                        <p>
+                            My name is <strong>Andrew Ngo</strong>. I am a student currently working towards a Bachelors in Computer Engineering
+                             with Minors in Computer Science and Cybersecurity @ Wichita State University.
+                        </p>
+                        <p>
+                            I am currently contracted by Ennovar as a Quality Assurance Analyst at NetApp where I perform
+                             drive qualifications for our vendors, including but not limited to stress testing and benchmarking.
+                        </p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/drewngo">GitHub</a>
+                    <a href="https://www.linkedin.com/in/andrewngo26/">LinkedIn</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p style="font-size: 0.8rem; opacity: 0.6;">
+                실패는 성공의 어머니
+                <br>
+                failure is the mother of success
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
 </html>
